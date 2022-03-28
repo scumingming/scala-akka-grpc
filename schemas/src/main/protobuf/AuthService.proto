@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import public "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "io.schemas";
+option java_outer_classname = "AuthServiceProto";
+
+message AuthRequest {
+  string userId = 1;
+  string email = 2;
+  string phone = 3;
+  string cookie = 4;
+  string authorization = 5;
+  google.protobuf.Timestamp timestamp = 6;
+}
+
+message AuthResponse {
+  int32 code = 1;
+  string msg = 2;
+
+}
+
+service AuthService {
+  rpc Auth(AuthRequest) returns(AuthResponse);
+}

@@ -1,0 +1,47 @@
+appName = "grpc-client"
+
+akka.kafka {
+  consumer {
+    wakeup-timeout = 10000
+  }
+}
+
+akka.grpc.client {
+  "GreeterService" {
+    service-discovery {
+      mechanism = "config"
+      service-name = "grpc-server"
+      protocol = "tcp"
+      port-name = "http"
+    }
+    use-tls = false
+  }
+}
+
+akka {
+  discovery {
+    method = aggregate
+    aggregate {
+      discovery-methods = ["config"]
+    }
+    config {
+      services {
+        grpc-server {
+            endpoints = [
+              {
+                host = "127.0.0.1"
+                port = 8080
+              }
+            ]
+          }
+      }
+    }
+  }
+}
+
+
+akka {
+  loglevel = DEBUG
+  discovery.method = akka-dns
+  io.dns.resolver = async-dns
+}

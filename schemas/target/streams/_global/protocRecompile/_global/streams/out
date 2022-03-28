@@ -1,0 +1,6 @@
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for io.schemas.AuthService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for io.schemas.GreeterService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for io.schemas.AuthService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for io.schemas.GreeterService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for io.schemas.AuthService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for io.schemas.GreeterService[0m

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-client/grpc-client.iml" filepath="$PROJECT_DIR$/grpc-client/grpc-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-server.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-akka-grpc.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-akka-grpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-akka-grpc-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-akka-grpc-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/schemas/schemas.iml" filepath="$PROJECT_DIR$/schemas/schemas.iml" />
+    </modules>
+  </component>
+</project>
